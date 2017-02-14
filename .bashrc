@@ -39,7 +39,7 @@ alias mntmove='sshfs amazigh.zerzour@warr.de:/ ~/MoveII-FTP; cd /home/amazigh/Mo
 alias umntmove='fusermount -u ~/MoveII-FTP'
 
 # list installed packages
-alias lspack='dpkg --get-selections | grep -v deinstall'
+alias apt-ls='dpkg --get-selections | grep -v deinstall'
 
 # cd to virtual python environments
 alias pyenvs='cd ~/Documents/pythonvenvs/'
