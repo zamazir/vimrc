@@ -55,14 +55,19 @@ alias augconnect='ssh -Xtt zamaz@gate1.aug.ipp.mpg.de "kinit && ssh sxaug35"'
 alias bbc='sudo bash ~/Documents/scripts/connectBeaglebone.sh'
 # Update system and programs
 alias update='sudo bash ~/Documents/scripts/update.sh'
-# Display files and folders in a detailed list by standard
+# Display files and folders in a detailed list by default
 alias ls='ls -l --color'
 # cd to MoveII OneDrive directory
 alias cdmoveii='cd ~/OneDrive/Uni/Move'
 # cd to master's AFS directory
 alias cdmasters='cd /afs/ipp/u/zamaz/Documents/Masters/'
 # Start working environment for master's thesis
-alias masters='get_token && mate-terminal --working-directory "/afs/ipp/u/zamaz/Documents/Masters/" && mate-terminal -x bash -c "ssh -Xtt zamaz@gate1.aug.ipp.mpg.de \"kinit && ssh sxaug35\";bash" && mate-terminal -x /usr/share/tagspaces/tagspaces && ganttproject && thunderbird'
+alias masters='get_token && 
+      mate-terminal --working-directory "/afs/ipp/u/zamaz/Documents/Masters/" && 
+      mate-terminal --working-directory "~/OneDrive/Uni/TUM/Masterarbeit/" && 
+      mate-terminal -x bash -c "ssh -Xtt zamaz@gate1.aug.ipp.mpg.de \"kinit &&
+          ssh sxaug35\";bash" && 
+      mate-terminal -x /usr/share/tagspaces/tagspaces'
 # Get kerberos token
 alias get_token="kinit zamaz && aklog -noprdb"
 # Start Evernote

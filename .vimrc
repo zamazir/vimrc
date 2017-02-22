@@ -34,7 +34,7 @@ set wrap			"line wrapping
 set linebreak		"don't break words
 set nolist			"ensures that linebreak will work
 set textwidth=79
-set formatoptions=qrn1
+set formatoptions=qrn1tcj
 set pastetoggle=<F2>		"disable indentation when pasting text
 let g:rainbow_active = 1	"enable parentheses coloring
 set laststatus=2			"enable airline
@@ -116,6 +116,9 @@ let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats='pdf, aux'
+
+"========== Configure Command t ==
+let g:CommandTMaxFiles=50000
 
 "========== Commands =============
 "execute this file
