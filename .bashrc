@@ -64,10 +64,9 @@ alias cdmasters='cd /afs/ipp/u/zamaz/Documents/Masters/'
 # Start working environment for master's thesis
 alias masters='get_token && 
       mate-terminal --working-directory "/afs/ipp/u/zamaz/Documents/Masters/" && 
-      mate-terminal --working-directory "~/OneDrive/Uni/TUM/Masterarbeit/" && 
+      mate-terminal --working-directory "/home/amazigh/OneDrive/Uni/TUM/Masterarbeit/" && 
       mate-terminal -x bash -c "ssh -Xtt zamaz@gate1.aug.ipp.mpg.de \"kinit &&
-          ssh sxaug35\";bash" && 
-      mate-terminal -x /usr/share/tagspaces/tagspaces'
+          ssh sxaug35\";bash"'
 # Get kerberos token
 alias get_token="kinit zamaz && aklog -noprdb"
 # Start Evernote
